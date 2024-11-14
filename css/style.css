@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50px;
+    border: none;
+    border-radius: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1d9bf0;
+    font-weight: 900;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.cta .btn {
+    background-color: #1d9bf0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #146ab6;
+}
+
+.banner {
+    background-image: url('../img/✂️ LoL Coven Group.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #86f704;
+}
+
+.banner-content .btn {
+    background-color: #1d9bf0;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.banner-content .btn:hover {
+    background-color: #146ab6;
+    text-shadow: 0 0 10px #0df10d;
+}
+
+.champions-section {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url('../img/Coven Ahri, Huyy Nguyen.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.champions-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.champions-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.champions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.champion-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.champion-card:hover {
+    transform: translateY(-10px);
+}
+
+.champion-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.champion-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.champion-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.champion-card .btn-small {
+    background-color: #1d9bf0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.champion-card .btn-small:hover {
+    background-color: #146ab6;
+}
+
+.lore-overview {
+    background-color: #0e0e0e;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.lore-overview h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.lore-overview p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.btn-large {
+    background-color: #1d9bf0;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-large:hover {
+    background-color: #146ab6;
+    transform: scale(1.05);
+}
+
+.game-modes-section {
+    background-image: url("../img/265f4fcb-9b0f-454d-b8b2-c44e8f55b9ce.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.game-modes-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.game-modes-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.game-modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.game-mode-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-mode-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.game-mode-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.game-mode-content {
+    padding: 20px;
+}
+
+.game-mode-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d9bf0;
+}
+
+.game-mode-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.news-section {
+    background: linear-gradient(135deg, #1c1c28, #14141f, #0b0b12);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.news-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d9bf0;
+}
+
+.news-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-small {
+    background-color: #1d9bf0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #146ab6;
+}
+
+.footer {
+    background: linear-gradient(135deg, #0b0b12, #1c1c28);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-links, .footer-social, .footer-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3, .footer-social h3, .footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #8a2be2;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+    color: #1d9bf0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #146ab6;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.5;
+}
